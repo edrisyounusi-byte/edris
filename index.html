@@ -10,11 +10,20 @@
   </head>
   <body>
     <header>
+      <header>
+        <!-- 🟢 این خط جدید را برای ایجاد افکت ماتریکس دقیقاً در اینجا اضافه کنید -->
+        <canvas id="matrix-canvas"></canvas>
+
+        <div class="avatar cyber-green-text">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h1>محمد ادریس</h1>
+        <p>محصل و پژوهشگر حوزه امنیت سایبری و شبکه</p>
+      </header>
+
       <div class="avatar Cyber-green-text">
         <i class="fa-solid fa-user-shield"></i>
       </div>
-      <h1>محمد ادریس</h1>
-      <p>محصل و پژوهشگر حوزه امنیت سایبری وشبکه</p>
     </header>
     <nav>
       <a href="#about"><i class="fa-solid fa-user"></i>درباره من </a>
@@ -32,69 +41,197 @@
           سلام ،من محمد ادریس هستم . به دنیای هک قانون مند،امنیت اطلاعات و شبکه
           علاقه فراوانی دارم. درحال حاضر تمرکز من روی یادگیری سیستم عامل لینوکس
           ،مفاهیم پیشرفته شبکه و مکانیزم های دفاعی در امنیت سایبری است.
+          <!-- بخش مهارت‌های فنی با نوار پیشرفت -->
         </p>
-      </section>
-      <section id="skills">
-        <h2><i class="fa-solid fa-bolt"></i>مهارت های فنی</h2>
-        <ul>
-          <li><i class="fa-brands fa-linux"></i>linux</li>
-          <li><i class="fa-solid fa-network-wired"></i>Networking</li>
-          <li><i class="fa-solid fa-shield-halved"></i> Security</li>
-          <li><i class="fa-solid fa-terminal"></i>bash Scripting</li>
-          <li class="skills-new"><i class="fa-solid fa-bug"></i>penTesting</li>
-        </ul>
-      </section>
-      <section id="projects" class="section-new">
-        <h2 class="Cyber-green-text">
-          <i class="fa-solid fa-folder-open"></i>پروژه هاو فعالیت ها
-        </h2>
-        <div class="projects-grid">
-          <div class="projects-card">
-            <h3>کانفیگ آزمایشگاه امنیت(lab)</h3>
-            <p>
-              راه اندازی یک محیط مجازی برای تست نفوس و برسی آسیب پزیری با
-              استفاده از کالی لینوکس
-            </p>
+
+        <section id="skills">
+          <h2><i class="fa-solid fa-bolt"></i> مهارت‌های فنی و میزان تسلط</h2>
+          <div class="skills-container">
+            <div class="skill-progress-box">
+              <div class="skill-info">
+                <span
+                  ><i class="fa-brands fa-linux"></i> Linux (Kali /
+                  Ubuntu)</span
+                >
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-line" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-progress-box">
+              <div class="skill-info">
+                <span
+                  ><i class="fa-solid fa-network-wired"></i> Networking
+                  (CCNA)</span
+                >
+                <span>75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-line" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-progress-box">
+              <div class="skill-info">
+                <span
+                  ><i class="fa-solid fa-shield-halved"></i> Cyber
+                  Security</span
+                >
+                <span>70%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-line" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-progress-box">
+              <div class="skill-info">
+                <span><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-line" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-progress-box">
+              <div class="skill-info">
+                <span><i class="fa-solid fa-terminal"></i> Bash Scripting</span>
+                <span>65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-line" style="width: 65%"></div>
+              </div>
+            </div>
           </div>
-          <div class="projects-card">
-            <h3>اسکریپت نویسی اتوماسیون</h3>
+        </section>
+      </section>
+      <!-- بخش پیشرفته پروژه‌ها -->
+      <section id="projects" class="section-new">
+        <h2 class="cyber-green-text">
+          <i class="fa-solid fa-folder-open"></i> پروژه‌ها و فعالیت‌های تخصصی
+        </h2>
+        <div class="project-grid">
+          <!-- پروژه اول -->
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-user-secret"></i>
+            </div>
+            <h3>آزمایشگاه تست نفوذ (Penetration Testing Lab)</h3>
             <p>
-              جهت خودکار سازی کارهای لینوکس و اسکن پورت ها Bash نوشتن اسکریپت
-              های ساده
+              راه‌اندازی و کانفیگ یک محیط آزمایشگاهی ایزوله با کالی لینوکس جهت
+              تست آسیب‌پذیری‌های وب و شبکه.
             </p>
+            <div class="project-tags">
+              <span>Kali Linux</span>
+              <span>Nmap</span>
+              <span>Metasploit</span>
+            </div>
+          </div>
+
+          <!-- پروژه دوم -->
+          <div class="project-card">
+            <div class="project-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>اسکریپت اتوماسیون امنیت</h3>
+            <p>
+              توسعه یک اسکریپت اختصاصی با Bash جهت اسکن خودکار پورت‌های باز و
+              جمع‌آوری اطلاعات اولیه (Recon).
+            </p>
+            <div class="project-tags">
+              <span>Bash Scripting</span>
+              <span>Linux</span>
+              <span>Automation</span>
+            </div>
           </div>
         </div>
       </section>
-      <section id="education" class="section-new">
-        <h2 class="Cyber-green-text">
-          <i class="fa-solid fa-certificate"></i>دوره های در حال گذرانده
-        </h2>
 
-        <ul class="edu-list">
-          <li>
-            <strong>مفاهیم شبکه</strong>&nbsp;آشنایی کامل با مدل های OSIوTCP/IP
-          </li>
-          <li>
-            <strong>امنیت اطلاعات</strong>&nbsp;مطالعه روی متدهای رمزنگاری
-            وامنیت وب
-          </li>
-        </ul>
+      <!-- بخش دوره‌های آموزشی کاملاً مدرن -->
+      <section id="education" class="section-new">
+        <h2 class="cyber-green-text">
+          <i class="fa-solid fa-graduation-cap"></i> دوره‌ها و تخصص‌های در حال
+          گذراندن
+        </h2>
+        <div class="education-grid">
+          <!-- کارت دوره اول -->
+          <div class="edu-card">
+            <div class="edu-badge">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="edu-content">
+              <h3>مهندسی شبکه (Network Engineering)</h3>
+              <p>
+                تسلط و آشنایی کامل بر مفاهیم مدل‌های OSI، پروتکل‌های TCP/IP،
+                مسیر‌یابی (Routing) و سوئیچینگ مدرن.
+              </p>
+            </div>
+          </div>
+
+          <!-- کارت دوره دوم -->
+          <div class="edu-card">
+            <div class="edu-badge"><i class="fa-solid fa-key"></i></div>
+            <div class="edu-content">
+              <h3>امنیت اطلاعات و رمزنگاری</h3>
+              <p>
+                پژوهش و مطالعه عمیق روی متدهای رمزنگاری داده‌ها، مکانیزم‌های
+                دفاعی شبکه و آسیب‌پذیری‌های امنیتی وب.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- بخش تماس با من همراه با فرم پیام -->
       <section id="contact">
-        <h2><i class="fa-solid fa-address-book"></i>ارتباط با من</h2>
+        <h2><i class="fa-solid fa-address-book"></i> ارتباط با من</h2>
         <p class="contact-text">
-          برای همکاری یا تبادل اطلاعات می توانیداز راه های ذیل بامن در تماس
-          باشید:
+          برای همکاری، مشاوره یا تبادل اطلاعات می‌توانید پیام خود را از طریق فرم
+          زیر ارسال کنید:
         </p>
-        <div class="social-link">
-          <a href="mailto:edrisyunusi@gmail.com" class="social-item"
-            ><i class="fa-solid fa-envelope"></i>ایمیل</a
+
+        <form
+          class="cyber-form"
+          onsubmit="event.preventDefault(); alert('پیام شما با موفقیت شبیه‌سازی و ارسال شد!');"
+        >
+          <div class="form-group">
+            <label for="name">نام و نام خانوادگی</label>
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="نام خود را وارد کنید..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">آدرس ایمیل</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">متن پیام</label>
+            <textarea
+              id="message"
+              rows="5"
+              required
+              placeholder="پیام خود را بنویسید..."
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> ارسال پیام امن
+          </button>
+        </form>
+
+        <div class="social-links" style="margin-top: 30px">
+          <a href="mailto:edrisyounusi@gmail.com" class="social-item"
+            ><i class="fa-solid fa-envelope"></i> ایمیل مستقیم</a
           >
-          <a href="#" class="social-item section-new"
-            ><i class="fa-brands fa-linkedin"></i>لینکدین</a
+          <a href="#" class="social-item social-new"
+            ><i class="fa-brands fa-linkedin"></i> لینکدین</a
           >
-          <a href="#" class="social-item section-new"
-            ><i class="fa-brands fa-github"></i>گیت هاب</a
+          <a href="#" class="social-item social-new"
+            ><i class="fa-brands fa-github"></i> گیت‌هاب</a
           >
         </div>
       </section>
